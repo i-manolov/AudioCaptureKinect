@@ -239,7 +239,7 @@ namespace Microsoft.Samples.Kinect.AudioBasics
 
         private void RecordingThread()
         {
-            fileStream2= new FileStream(@"C:\Users\Ivan\Documents\", FileMode.Create);
+            fileStream2= new FileStream(@"C:\Users\Ivan\Documents\a.wav", FileMode.Create);
             int rec_time = (int)20 * 2 * 16000;//20 sec
             WriteWavHeader(fileStream2, rec_time);    
         }
